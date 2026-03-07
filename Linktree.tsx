@@ -77,6 +77,7 @@ export default function Linktree() {
             <a href="https://snaptools.xyz" target="_blank" rel="noopener noreferrer" className="lt-project-link">SnapTools</a>
             <a href="https://solar.sandipmaity.me" target="_blank" rel="noopener noreferrer" className="lt-project-link">Solar System</a>
             <a href="https://weather.sandipmaity.me" target="_blank" rel="noopener noreferrer" className="lt-project-link">Weatherwise</a>
+            <a href="https://github.com/iam-sandipmaity/auctionmaker" target="_blank" rel="noopener noreferrer" className="lt-project-link">Auction Maker</a>
             <a href="https://mftracker.sandipmaity.me" target="_blank" rel="noopener noreferrer" className="lt-project-link">Mutual Fund Tracker</a>
             <a href="https://seriesrating.sandipmaity.me/" target="_blank" rel="noopener noreferrer" className="lt-project-link">Series Rating</a>
             <a href="https://crypto.sandipmaity.me" target="_blank" rel="noopener noreferrer" className="lt-project-link">Crypto Tracker</a>
@@ -88,3 +89,4 @@ export default function Linktree() {
     </>
   );
 }
+

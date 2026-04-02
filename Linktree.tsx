@@ -83,6 +83,7 @@ export default function Linktree() {
             <a href="https://crypto.sandipmaity.me" target="_blank" rel="noopener noreferrer" className="lt-project-link">Crypto Tracker</a>
             <a href="https://video.sandipmaity.me" target="_blank" rel="noopener noreferrer" className="lt-project-link">Video Downloader</a>
             <a href="https://github.com/iam-sandipmaity/nexa-android" target="_blank" rel="noopener noreferrer" className="lt-project-link">Nexa Android</a>
+            <a href="https://apti.sandipmaity.me/" target="_blank" rel="noopener noreferrer" className="lt-project-link">AptitudePro</a>
           </div>
         </div>
       </div>

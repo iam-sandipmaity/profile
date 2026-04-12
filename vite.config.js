@@ -5,17 +5,5 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   publicDir: path.resolve('./public'),
-  server: {
-    port: 5173,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3001',
-        changeOrigin: true
-      },
-      '/icons': {
-        target: 'http://localhost:3001',
-        changeOrigin: true
-      }
-    }
-  }
+  base: './'
 })

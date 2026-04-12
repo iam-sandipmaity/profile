@@ -10,7 +10,7 @@ function App() {
   const [toast, setToast] = useState({ show: false, message: '' })
 
   useEffect(() => {
-    fetch('/api/profile')
+    fetch('/data/profile.json')
       .then(res => res.json())
       .then(data => {
         setProfile(data)

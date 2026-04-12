@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "client": "npx vite",
+    "client": "node node_modules/vite/bin/vite.js",
     "server": "node server/index.js",
-    "build": "npx vite build",
-    "preview": "npx vite preview"
+    "build": "node node_modules/vite/bin/vite.js build",
+    "preview": "node node_modules/vite/bin/vite.js preview"
   },
   "keywords": ["linktree", "react", "nodejs"],
   "author": "",

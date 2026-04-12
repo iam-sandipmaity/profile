@@ -1,0 +1,136 @@
+import express from 'express';
+import cors from 'cors';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+app.use(cors());
+app.use(express.json());
+
+app.use('/icons', express.static(join(__dirname, '../public/icons')));
+
+app.get('/api/profile', (req, res) => {
+  res.json({
+    handle: 'Sandip Maity',
+    bio: 'Unemployed Engineer · Building things on the internet · Kolkata, IN',
+    avatar: '/profile.jpg',
+    links: [
+      {
+        id: 'portfolio',
+        platform: 'x',
+        label: 'Portfolio',
+        url: 'https://sandipmaity.me',
+        icon: 'globe'
+      },
+      {
+        id: 'github',
+        platform: 'github',
+        label: 'GitHub',
+        url: 'https://github.com/iam-sandipmaity',
+        icon: 'github'
+      },
+      {
+        id: 'linkedin',
+        platform: 'linkedin',
+        label: 'LinkedIn',
+        url: 'https://linkedin.com/in/iam-sandipmaity',
+        icon: 'linkedin'
+      },
+      {
+        id: 'twitter',
+        platform: 'x',
+        label: 'X (Twitter)',
+        url: 'https://x.com/iam-sandipmaity',
+        icon: 'x'
+      },
+      {
+        id: 'instagram',
+        platform: 'ig',
+        label: 'Instagram',
+        url: 'https://instagram.com/iam_sandipmaity',
+        icon: 'instagram'
+      },
+      {
+        id: 'email',
+        platform: 'email',
+        label: 'Email',
+        url: 'mailto:maitysandip@proton.me',
+        icon: 'email'
+      }
+    ],
+    projects: [
+      {
+        id: 'snaptools',
+        platform: 'proj',
+        label: 'SnapTools',
+        url: 'https://snaptools.xyz',
+        icon: '/icons/snaptools.svg'
+      },
+      {
+        id: 'solar',
+        platform: 'proj',
+        label: 'Solar System',
+        url: 'https://solar.sandipmaity.me',
+        icon: '/icons/solar.svg'
+      },
+      {
+        id: 'weather',
+        platform: 'proj',
+        label: 'Weatherwise',
+        url: 'https://weather.sandipmaity.me',
+        icon: '/icons/weather.svg'
+      },
+      {
+        id: 'mftracker',
+        platform: 'proj',
+        label: 'Mutual Fund Tracker',
+        url: 'https://mftracker.sandipmaity.me',
+        icon: '/icons/mftracker.svg'
+      },
+      {
+        id: 'seriesrating',
+        platform: 'proj',
+        label: 'Series Rating',
+        url: 'https://seriesrating.sandipmaity.me/',
+        icon: '/icons/seriesrating.svg'
+      },
+      {
+        id: 'crypto',
+        platform: 'proj',
+        label: 'Crypto Tracker',
+        url: 'https://crypto.sandipmaity.me',
+        icon: '/icons/crypto.svg'
+      },
+      {
+        id: 'video',
+        platform: 'proj',
+        label: 'Video Downloader',
+        url: 'https://video.sandipmaity.me',
+        icon: '/icons/video.svg'
+      },
+      {
+        id: 'nexa',
+        platform: 'proj',
+        label: 'Nexa Android',
+        url: 'https://github.com/iam-sandipmaity/nexa-android',
+        icon: '/icons/nexa.svg'
+      },
+      {
+        id: 'apti',
+        platform: 'proj',
+        label: 'AptitudePro',
+        url: 'https://apti.sandipmaity.me/',
+        icon: '/icons/apti.svg'
+      }
+    ]
+  });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});

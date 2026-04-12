@@ -1,0 +1,216 @@
+.page {
+  background: #000;
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 16px 80px;
+  color: #fff;
+}
+
+.loading {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1.1rem;
+}
+
+.avatar-wrap {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 9000px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  color: #fff;
+  letter-spacing: -2px;
+  position: relative;
+}
+
+.avatar-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.handle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.bio {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 340px;
+  line-height: 1.4;
+  margin-bottom: 28px;
+}
+
+.sec-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 16px 0 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pill-outer {
+  padding-bottom: 0;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  background: #141414;
+  border-radius: 9999px;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 16px;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+  border: none;
+  outline: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+.pill:hover {
+  transform: scale(1.05);
+}
+
+.pill:active {
+  transform: scale(0.98) !important;
+}
+
+.pill.kick:hover { color: #53fc18; }
+.pill.x:hover { color: #1DA1F2; }
+.pill.github:hover { color: #fff; background: #222; }
+.pill.linkedin:hover { color: #0077b5; }
+.pill.ig:hover { color: #E1306C; }
+.pill.yt:hover { color: #FF0000; }
+.pill.tiktok:hover { color: #ff3b5c; }
+.pill.reddit:hover { color: #FF4500; }
+.pill.discord:hover { color: #7289DA; }
+.pill.snapchat:hover { color: #ffeb3b; }
+.pill.email:hover { color: #6d4aff; }
+.pill.proj:hover { color: #fff; background: #1c1c1c; }
+
+.pill-icon {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pill-icon img {
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+
+.pill-icon svg {
+  width: 35px;
+  height: 35px;
+}
+
+.pill-label {
+  flex: 1;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  color: inherit;
+  padding-right: 8px;
+}
+
+.pill-copy {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.18s;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.pill-copy:hover {
+  color: #fff;
+}
+
+.pill-copy svg {
+  width: 18px;
+  height: 18px;
+}
+
+.foot {
+  margin-top: 28px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.18);
+  letter-spacing: 0.06em;
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(16px);
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s, transform 0.22s;
+  z-index: 9999;
+  white-space: nowrap;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.copy-svg {
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

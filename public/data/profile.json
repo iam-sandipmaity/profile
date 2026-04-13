@@ -55,6 +55,13 @@
       "icon": "/icons/snaptools.svg"
     },
     {
+      "id": "Auction Maker",
+      "platform": "proj",
+      "label": "Auction",
+      "url": "https://github.com/iam-sandipmaity/AuctionMaker",
+      "icon": "/icons/auction.svg"
+    },
+    {
       "id": "solar",
       "platform": "proj",
       "label": "Solar System",

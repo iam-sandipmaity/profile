@@ -90,6 +90,13 @@
       "icon": "/icons/seriesrating.svg"
     },
     {
+      "id": "log",
+      "platform": "proj",
+      "label": "GitHub Log",
+      "url": "https://log.sandipmaity.me",
+      "icon": "/icons/log.svg"
+    },
+    {
       "id": "crypto",
       "platform": "proj",
       "label": "Crypto Tracker",

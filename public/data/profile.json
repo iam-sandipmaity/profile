@@ -90,6 +90,13 @@
       "icon": "/icons/seriesrating.svg"
     },
     {
+      "id": "terminal",
+      "platform": "proj",
+      "label": "Terminal Portfolio",
+      "url": "https://terminal.sandipmaity.me",
+      "icon": "/icons/terminal.svg"
+    },
+    {
       "id": "log",
       "platform": "proj",
       "label": "GitHub Log",

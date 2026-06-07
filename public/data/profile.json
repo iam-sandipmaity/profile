@@ -18,25 +18,11 @@
       "icon": "github"
     },
     {
-      "id": "linkedin",
-      "platform": "linkedin",
-      "label": "LinkedIn",
-      "url": "https://linkedin.com/in/iam-sandipmaity",
-      "icon": "linkedin"
-    },
-    {
       "id": "twitter",
       "platform": "x",
       "label": "X ",
       "url": "https://x.com/iam-sandipmaity",
       "icon": "x"
-    },
-    {
-      "id": "instagram",
-      "platform": "ig",
-      "label": "Instagram",
-      "url": "https://instagram.com/iam_sandipmaity",
-      "icon": "instagram"
     },
     {
       "id": "email",
@@ -116,6 +102,13 @@
       "label": "Video Downloader",
       "url": "https://video.sandipmaity.me",
       "icon": "/icons/video.svg"
+    },
+    {
+      "id": "travel",
+      "platform": "proj",
+      "label": "Wanderful Travel",
+      "url": "https://travel.sandipmaity.me",
+      "icon": "/icons/travel.svg"
     },
     {
       "id": "nexa",

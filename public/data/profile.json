@@ -37,6 +37,13 @@
       "label": "pixelfed",
       "url": "https://pixelfed.social/sandip",
       "icon": "pixelfed"
+    },
+    {
+      "id": "newslatter",
+      "platform": "Beehiiv",
+      "label": "newsletter",
+      "url": "https://sandipmaity.beehiiv.com",
+      "icon": "newsletter"
     }
   ],
   "projects": [

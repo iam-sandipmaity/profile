@@ -31,6 +31,13 @@
       "url": "mailto:maitysandip@proton.me",
       "icon": "email"
     }
+    {
+      "id": "pixelfed",
+      "platform": "pixelfed",
+      "label": "pixelfed",
+      "url": "https://pixelfed.social/sandip",
+      "icon": "pixelfed"
+    }
   ],
   "projects": [
     {

@@ -30,7 +30,7 @@
       "label": "Email",
       "url": "mailto:maitysandip@proton.me",
       "icon": "email"
-    }
+    },
     {
       "id": "pixelfed",
       "platform": "pixelfed",
